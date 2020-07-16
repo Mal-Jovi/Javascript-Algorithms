@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    <script>
+
+        function long(stringInput) {
+            const longestWord = string => {
+                let words = string.split(" ");
+                let longest = "";
+
+                for (let word of words) {
+                    if (word.length > longest.length) {
+                        longest = word;
+                    }
+                }
+                return longest;
+            };
+
+            alert(longestWord(stringInput));
+        };
+
+
+        function reverse(stringInput) {
+            const reverseString = string => {
+                let startString = string;
+                let reversedString = string.split("").reverse().join("");
+
+                return reversedString;
+            };
+
+            alert(reverseString(stringInput));
+        };
+
+    </script>
+
+    <button onclick="long('hitchhiker guide')">longestWord</button>
+    <button onclick="reverse('hitchhiker')">reverseWord</button>
+
+</body>
+</html>
